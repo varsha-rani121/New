@@ -1,67 +1,124 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pancake-Stack</title>
-    <link rel="stylesheet" href="Pancake-Stack.css">
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    background: -webkit-linear-gradient(120deg, #2980b9, #8e44ad);
+}
+
+.container{
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    row-gap: 5px;
+    min-height: 100vh;
+}
+
+.heading{
+
+    display: flex;
+    text-align: center;
+}
+
+header{
+
+    justify-content: space-between;
+    background-color: white;
+    padding: 15px 3%;
+
+}
+
+.container .heading .left-header .content-of-left-heading{
+
+    margin-right: 20px
+}
+
+.color-item{
+
+    background: -webkit-linear-gradient(120deg, #2980b9, #8e44ad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.container .heading .right-header input{
+
+    background: -webkit-linear-gradient(120deg, #2980b9, #8e44ad);
+    padding: 5px 0;
+    width: 100px;
+}
+
+footer{
+
+    display: flex;
+    text-align: center;
+}
+
+.bottom{
+
+    padding: 15px 3%;
+    background-color: white;
+}
+
+footer img{
+
+    width: 20px;
+    margin-right: 20px;
     
-</head>
-<body>
+}
+
+.bottom .name{
+
+    margin-left: 50px;
+}
+
+.text-color-of-option{
+
+    color: grey;
+}
+
+.middle{
+
+    display: flex;  
+    background-color: rgb(136, 85, 85);
+}
+
+.middle .main-left{
+
+    padding: 10%;
+    padding-left: 1%;
+    padding-right: 15%;
+    width: 50vw;
+}
+
+.middle .main-right{
+
+    width: 50vw;
+}
+
+.middle .main-right img{
+
+    max-width: 100%;
+    width: 800px;
+    height: 700px;
+    max-height: 100%;
+    padding: 20%;
+    padding-right: 10%;
     
-    <div class="container">
-        
-        <header class="heading">
+}
 
-            <div class="left-header heading heading">
-                <p class="content-of-left-heading color-item weight">Collab</p>
-                <p class="content-of-left-heading weight">Home</p>
-                <p class="content-of-left-heading text-color-of-option">About</p>
-                <p class="content-of-left-heading text-color-of-option">Service</p>
-                <p class="content-of-left-heading text-color-of-option">Contact</p>
-                <p class="content-of-left-heading text-color-of-option">About</p>
-            </div>
+.weight{
 
-            <div class="right-header heading">
-                <input type="button" value="Get Started">
-            </div>
+    font-weight: bold;
+}
 
-        </header>
+.middle .main-left button{
 
-        <main class="middle">
+    background: -webkit-linear-gradient(120deg, #2980b9, #8e44ad);
+    padding: 5px 0;
+    width: 100px;
+}
 
-            <div class="main-left">
-
-                <h1>Collaborate Like Never Before</h1>
-                <br>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut quos velit enim, vel vero voluptatibus aperiam reiciendis consequuntur animi quam! Dolor ullam laboriosam, molestiae unde nihil, numquam itaque neque quae quidem eveniet esse accusantium aspernatur, suscipit saepe deleniti tempora minima.</p>
-
-                <br>
-                
-                <button>Discover Video</button>
-            </div>
-
-            <div class="main-right">
-                
-                <img src="images/collabrate.jpeg" alt="Error">
-            </div>
-
-        </main>
-
-        <footer class="bottom">
-
-            <img src="images/instagram.jpeg" alt="Error">
-            <img src="images/twitter.png" alt="Error">
-            <img src="images/twitter.png" alt="Error">
-
-            <div class="name responsive">
-
-                <p class="text-color-of-option">Varsha Rani</p>
-            </div>
-
-        </footer>
-
-    </div>
-</body>
-</html>
